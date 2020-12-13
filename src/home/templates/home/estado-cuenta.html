@@ -1,0 +1,79 @@
+{% extends 'base.html' %} {% block content %}
+<div class="container">
+    <h1>Estado de Cuenta</h1>
+    <p>Seleccione la cuenta que desea ver.</p>
+    <hr>
+
+    <div class="form-group">
+        <div class="campo">
+            <h3>
+                Numero de Cuenta:
+            </h3>
+        </div>
+        <div class="form-field">
+            <div class="custom-select">
+                <select>
+                    <option value="12423432" selected>001-0000-000</option>
+                    <option value="12423432">002-0000-000</option>
+                    <option value="12423432">003-0000-000</option>
+                </select>
+            </div>
+        </div>
+    </div>
+    <table>
+        <thead>
+            <tr>
+                <th>Fecha</th>
+                <th>Descripción</th>
+                <th>Debito/Credito</th>
+                <th>Saldo</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>13/12/2020</td>
+                <td>Comida Macdonalds</td>
+                <td>100.00</td>
+                <td>1000.00</td>
+            </tr>
+            <tr>
+                <td>13/12/2020</td>
+                <td>Comida Macdonalds</td>
+                <td>100.00</td>
+                <td>1000.00</td>
+            </tr>
+            <tr>
+                <td>13/12/2020</td>
+                <td>Comida Macdonalds</td>
+                <td>100.00</td>
+                <td>1000.00</td>
+            </tr>
+            <tr>
+                <td>13/12/2020</td>
+                <td>Comida Macdonalds</td>
+                <td>100.00</td>
+                <td>1000.00</td>
+            </tr>
+            <tr>
+                <td>13/12/2020</td>
+                <td>Comida Macdonalds</td>
+                <td>100.00</td>
+                <td>1000.00</td>
+            </tr>
+            <tr>
+                <td>13/12/2020</td>
+                <td>Comida Macdonalds</td>
+                <td>100.00</td>
+                <td>1000.00</td>
+            </tr>
+        </tbody>
+    </table>
+    <div>
+        saldo inicial saldo final valor debitos valor creditos no. creditos no. debitos
+    </div>
+    <div class="button-field">
+        <button class="boton rojo-btn">Regresar</button>
+    </div>
+</div>
+
+{% endblock %}

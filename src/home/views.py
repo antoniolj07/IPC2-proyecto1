@@ -9,8 +9,13 @@ def home_view(request, *args, **kwargs):
     return render(request, 'home/home.html', {})
 
 def nueva_cuenta_view(request, *args, **kwargs):
-    return render(request, 'crear-cuenta.html', {})
+    return render(request, 'home/crear-cuenta.html', {})
 
+def estado_cuenta_view(request, *args, **kwargs):
+    return render(request, 'home/estado-cuenta.html', {})
+
+def cuentas_propias_view(request, *args, **kwargs):
+    return render(request, 'home/transferencia-propias.html', {})
 
 def about_view(request, *args, **kwargs):
     # return HttpResponse('<h1>About Page</h1>')
