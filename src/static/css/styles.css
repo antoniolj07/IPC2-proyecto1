@@ -37,6 +37,26 @@ hr {
     border-top: 5px solid rgba(0, 0, 0, .1);
 }
 
+input[type="text"],
+input[type="password"],
+input[type="date"] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin: 5px;
+}
+
+.container {
+    width: 70%;
+    margin-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .text-center {
     text-align: center;
 }
@@ -103,3 +123,60 @@ hr {
 
 
 /*==========================================================================*/
+
+
+/* Register and login styles */
+
+.form-group {
+    display: flex;
+    flex-direction: row;
+}
+
+.campo {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    width: 20%;
+}
+
+.form-field {
+    width: 80%;
+}
+
+.button-field {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    width: 100%;
+}
+
+.boton {
+    border: none;
+    color: white;
+    padding: 1%;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 5px;
+    font-size: 17px;
+}
+
+.boton:hover {
+    cursor: pointer;
+}
+
+.verde-btn {
+    background-color: #4CAF50;
+}
+
+.rojo-btn {
+    background-color: #f44336;
+}
+
+.azul-btn {
+    background-color: #008CBA;
+}
+
+.gris-btn {
+    background-color: gray;
+}

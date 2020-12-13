@@ -7,3 +7,9 @@ def user_detail_view(request, *args, **kwards):
 
 def register_view(request, *args, **kwargs):
     return render(request, 'user/register.html', {})
+
+def register_empresa_view(request, *args, **kwargs):
+    return render(request, 'user/register-empresa.html', {})
+
+def login_view(request, *args, **kwards):
+    return render(request, 'user/login.html', {})
