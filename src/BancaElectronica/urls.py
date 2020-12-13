@@ -18,11 +18,12 @@ from django.urls import path
 
 from home.views import home_view, about_view
 
-from user.views import user_detail_view
+from user.views import user_detail_view, register_view
 
 urlpatterns = [
     path('', home_view, name='home'),
     path('admin/', admin.site.urls),
     path('about', about_view, name='login'),
-    path('info', user_detail_view, name='login')
+    path('info', user_detail_view, name='login'),
+    path('register', register_view, name="register")
 ]

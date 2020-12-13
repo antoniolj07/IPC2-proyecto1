@@ -2,5 +2,8 @@ from django.shortcuts import render
 from .models import User
 
 # Create your views here.
-def user_detail_view(request):
+def user_detail_view(request, *args, **kwards):
     return render(request, 'user/info.html', {})
+
+def register_view(request, *args, **kwargs):
+    return render(request, 'user/register.html', {})

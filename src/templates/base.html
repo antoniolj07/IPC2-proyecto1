@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 
@@ -5,12 +6,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Banca Electronica</title>
+    <link rel="stylesheet" href="{% static 'css/styles.css'%}">
 </head>
 
 <body>
-    {% load static %}
-    <link rel="stylesheet" href="{% static 'styles.css'%}">
-    <h1>Welcome to Banca Electronica</h1>
     {% block content %} {% endblock %}
 </body>
 

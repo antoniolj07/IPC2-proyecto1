@@ -1,0 +1,41 @@
+{% extends 'base.html' %} {% load static %}
+<link rel="stylesheet" href="{% static 'css/home.css' %}">
+<!--Contenido del bloque-->
+{% block content %}
+<div class="home">
+    <h1 class="home_title">Bienvenido Usuario</h1>
+    <h2 class="home-subtitle text-center">Selecciona Cualquiera de las Siguientes Opciones</h2>
+    <br>
+    <div>
+        <div class="cards-container">
+
+            <div class="card">
+                <h3>Crear Nueva Cuenta</h3>
+            </div>
+            <div class="card">
+                <h3>Ver Cuentas Actuales</h3>
+            </div>
+            <div class="card">
+                <h3>Hacer Transferencia entre Cuentas Propias</h3>
+            </div>
+            <div class="card">
+                <h3>Hacer Transferencia a Terceros</h3>
+            </div>
+        </div>
+        <div class="cards-container">
+            <div class="card">
+                <h3>Solicitar Prestamo</h3>
+            </div>
+            <div class="card">
+                <h3>Pagar Servicios</h3>
+            </div>
+            <div class="card">
+                <h3>Pagar Proveedores</h3>
+            </div>
+            <div class="card">
+                <h3>Pagar Planillas</h3>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

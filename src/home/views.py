@@ -6,7 +6,7 @@ from django.http import HttpResponse
 
 def home_view(request, *args, **kwargs):
     # return HttpResponse('<h1>Hellow world</h1>')  # string of HTML code
-    return render(request, 'home/contact.html', {})
+    return render(request, 'home/home.html', {})
 
 
 def about_view(request, *args, **kwargs):
