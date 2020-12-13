@@ -1,0 +1,15 @@
+{% extends 'base.html' %} {% block content %}
+<h1>About</h1>
+<hr>
+<p>
+    {{ my_text }} {{ number }}
+</p>
+<ul>
+    {% for item in my_list %}
+    <li>{{forloop.counter}} {{item}}</li>
+    {% endfor %} {% if boolin %}
+    <button type="button">Activo</button> {% else %}
+    <button type="button">Inactivo</button> {% endif %}
+</ul>
+
+{% endblock %}
