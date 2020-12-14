@@ -1,19 +1,20 @@
 {% extends 'base.html'%} {% block content %}
 <div class="container">
-    <h1>Transferencia entre Cuentas Propias</h1>
-    <p>Debe seleccionar la cuenta que quiere debitar y el monto.</p>
+    <h1>Pago de Servicio</h1>
+    <p>Debe seleccionar el pago que desea realizar junto con el monto que desea pagar.</p>
     <hr>
     <form>
         <div class="form-group">
             <div class="campo">
-                <h3>Cuenta a Debitar: </h3>
+                <h3>Servicio a Pagar: </h3>
             </div>
             <div class="form-field">
                 <div class="custom-select">
                     <select>
-                        <option value="12423432" selected>001-0000-000</option>
-                        <option value="12423432">002-0000-000</option>
-                        <option value="12423432">003-0000-000</option>
+                        <option value="" selected>Seleccionar Servicio</option>
+                        <option value="12423432">Luz</option>
+                        <option value="12423432">Agua</option>
+                        <option value="12423432">Telefono</option>
                     </select>
                 </div>
             </div>
@@ -25,8 +26,8 @@
             <div class="form-field">
                 <div class="custom-select">
                     <select>
-                        <option value="12423432">001-0000-000</option>
-                        <option value="12423432" selected>002-0000-000</option>
+                        <option value="12423432" selected>001-0000-000</option>
+                        <option value="12423432">002-0000-000</option>
                         <option value="12423432">003-0000-000</option>
                     </select>
                 </div>

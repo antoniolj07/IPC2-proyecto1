@@ -17,6 +17,15 @@ def estado_cuenta_view(request, *args, **kwargs):
 def cuentas_propias_view(request, *args, **kwargs):
     return render(request, 'home/transferencia-propias.html', {})
 
+def transferencia_terceros_view(request, *args, **kwargs):
+    return render(request, 'home/transferencia-terceros.html', {})
+
+def pagos_view(request, *args, **kwargs):
+    return render(request, 'home/pagos.html', {})
+
+def prestamo_view(request, *args, **kwargs):
+    return render(request, 'home/solicitud-prestamo.html', {})
+
 def about_view(request, *args, **kwargs):
     # return HttpResponse('<h1>About Page</h1>')
     my_context = {
