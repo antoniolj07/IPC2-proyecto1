@@ -26,6 +26,15 @@ def pagos_view(request, *args, **kwargs):
 def prestamo_view(request, *args, **kwargs):
     return render(request, 'home/solicitud-prestamo.html', {})
 
+def cuentas_view(request, *args, **kwargs):
+    return render(request, 'home/cuentas.html', {})
+
+def pago_planillas_view(request, *args, **kwargs):
+    return render(request, 'home/pagar-planillas.html', {})
+
+def pago_proveedores_view(request, *args, **kwargs):
+    return render(request, 'home/pago-proveedores.html', {})
+
 def about_view(request, *args, **kwargs):
     # return HttpResponse('<h1>About Page</h1>')
     my_context = {

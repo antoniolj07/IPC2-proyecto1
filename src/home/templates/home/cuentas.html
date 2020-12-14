@@ -1,0 +1,54 @@
+{% extends 'base.html'%} {% block content %}
+<div class="container">
+    <h1>Todas las Cuentas</h1>
+    <hr>
+    <table>
+        <thead>
+            <tr>
+                <th>Numero de Cuenta</th>
+                <th>Tipo de Cuenta</th>
+                <th>Saldo</th>
+                <th>Activa</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>001-0000-000</td>
+                <td>Monetaria</td>
+                <td>1000.00</td>
+                <td>
+                    <input type="checkbox" value="activada" checked>
+                </td>
+            </tr>
+            <tr>
+                <td>002-0000-000</td>
+                <td>Ahorro</td>
+                <td>1524.60</td>
+                <td>
+                    <input type="checkbox" value="activada" checked>
+                </td>
+            </tr>
+            <tr>
+                <td>003-0000-000</td>
+                <td>Monetaria</td>
+                <td>1000.00</td>
+                <td>
+                    <input type="checkbox" value="activada">
+                </td>
+            </tr>
+            <tr>
+                <td>004-0000-000</td>
+                <td>Plazo Fijo</td>
+                <td>15000.00</td>
+                <td>
+                    <input type="checkbox" value="activada" checked>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <div class="button-field">
+        <button class="boton rojo-btn mr">Regresar</button>
+        <button class="boton verde-btn">Guardar</button>
+    </div>
+</div>
+{% endblock %}
